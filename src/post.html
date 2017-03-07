@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>阿闷仔的博客</title>
+  <meta name="renderer" content="webkit">
+  <meta name="apple-mobile-web-app-title" content="My App">
+  <meta content="yes" name="apple-mobile-web-app-capable" />
+  <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <link rel="shortcut icon" type="image/ico" href="favicon.ico" />
+  <link rel="stylesheet" href="css/main.css">
+  <!--[if lt IE 9]>
+      <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+  <!-- 侧栏 -->
+  <div id="side" class="ta-c">
+    <div class="logo">
+      <img src="img/avatar.jpg" alt="">
+    </div>
+    <h1>阿闷仔的博客</h1>
+    <h3>Amenzai's Blog</h3>
+    <ul class="nav hidden-l">
+      <li><a href="" class="active"><span class="icon-home hidden-l"></span>首页</a></li>
+      <li><a href=""><span class="icon-list hidden-l"></span>碎言碎语</a></li>
+      <li><a href=""><span class="icon-comment hidden-l"></span>留言</a></li>
+    </ul>
+    <p class="intro ta-l hidden-l">我是一个 20 岁的 homeschooler，爱好旅行以及一切富有创造性的事物，尤其是摄影、设计和编程。这个世界就是我的学校。学自己之所想所爱。自由的身心定能使我成为一个一直朝前行走的行者。</p>
+    <div class="doing hidden-l">
+      <p>最近在学画画，感觉身体被掏空。</p>
+      <p><span class="icon-map-marker"></span>Jiangsu Zhenjiang</p>
+    </div>
+    <p class="copyright hidden-l">© Amenzai's Blog 2015 - 2016</p>
+  </div>
+  <!-- 文章列表 -->
+  <div id="post">
+    <h1>文章标题</h1>
+    <div class="post-meta">三天前发布 | 1000人读过</div>
+    <div class="post-content">
+      <p>如果你在用电脑阅读这篇博文，你可以在屏幕左侧看到一个显示我当前所在地的模块（如果你看不到就说明我已经回家了，看上面的图片吧）。我每次到达一个新城市后，在手机上“签到”一下就会更新这里显示的所在地，并在我个人主页的旅行足迹地图加上相关信息。此前这个签到功能是通过一个 Web App 实现的：用 Javascript 通过 HTML5 的 Geolocation API 调用手机 GPS 定位获取经纬度，然后使用第三方接口来将经纬度转换为具体的城市，最后再用 AJAX 提交到我的服务器保存。我每次签到都需要在浏览器中打开签到页面，输入密码登录之后才能“一键签到”。这个过程虽然算不上繁琐，却也并不简便，当然，如果用 Swift 写一个原生 app 来实现，用起来会更方便一些，然而为了“更方便点”专门写个 app 似乎又不太值得……于是这事就不了了之了，直到我用上 Workflow 才真正解决这个问题。这听起来很神奇，实现起来却并不复杂，在这里我会尽量用通俗易懂语言和大家分享一下我的实现方法。</p>
+      <p>如果你在用电脑阅读这篇博文，你可以在屏幕左侧看到一个显示我当前所在地的模块（如果你看不到就说明我已经回家了，看上面的图片吧）。我每次到达一个新城市后。</p>
+      <p><img src="img/4-3.jpg" alt=""></p>
+      <p>如果你在用电脑阅读这篇博文，你可以在屏幕左侧看到一个显示我当前所在地的模块（如果你看不到就说明我已经回家了，看上面的图片吧）。我每次到达一个新城市后。</p>
+    </div>
+    <!-- 分享 -->
+    <div class="share">
+      <a href="" class="icon-arrow-up hidden-s"></a>
+      <a href="" class="icon-home hidden-s"></a>
+      <a href="" class="icon-share-alt"></a>
+      <a href="" class="icon-comments"></a>
+      <a href="" class="icon-arrow-up hidden-l"></a>
+    </div>
+    <!-- 扫二维码 -->
+    <div class="qcode ta-c">
+      <img src="img/qcode.png" alt="">
+      <span>扫描二维码加我微信哟</span>
+    </div>
+    <!-- 下一篇 -->
+    <div class="next-post ta-c">
+      <p>阅读下一篇博文</p>
+      <a href="" class="ta-l">
+        <h3>我是下一篇文章标题</h3>
+        <p>我说概要啥积分卡，啥地方撒开收到反馈我。</p>
+      </a>
+    </div>
+  </div>
+  <!-- <script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script> -->
+  <script src="lib/jquery.js"></script>
+</body>
+
+</html>
